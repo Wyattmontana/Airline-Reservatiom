@@ -2,7 +2,7 @@
     Dim seats(20, 6) As String
     Dim frmAssign As New assignFlyer()
     Private Sub frmSeatingChart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lstRows.Items.Add(" ABC DEF ")
+        lstRows.Items.Add(" A  B  C   D  E  F ")
         For i As Integer = 1 To 20
             For j As Integer = 1 To 6
                 seats(i, j) = " O"
@@ -71,7 +71,7 @@
         For i As Integer = 1 To 20
             For j As Integer = 1 To 6
                 Select Case seats(i, j)
-                    Case "-"
+                    Case " - "
                         passengers += 1
                     Case Else
                         vacant += 1
@@ -83,7 +83,7 @@
         Next
 
         lstDisplay.Items.Clear()
-        lstDisplay.Items.Add("Seats Filled : " & (15 * 6 - vacant))
+        lstDisplay.Items.Add("Seats Filled : " & (20 * 6 - vacant))
         lstDisplay.Items.Add("Windows Available : " & window)
         lstDisplay.Items.Add("Other Available seats :" & vacant - window)
     End Sub

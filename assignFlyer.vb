@@ -2,7 +2,7 @@
     Public seat As String
     Private Sub assignFlyer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Select Case seat
-            Case "-"
+            Case " - "
                 MsgBox("ERROR SEAT ALREADY TAKEN")
                 Close()
             Case Else

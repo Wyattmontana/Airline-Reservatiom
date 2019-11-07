@@ -165,7 +165,7 @@ Partial Class seatingChart
         '
         Me.btnDisplay.Location = New System.Drawing.Point(12, 61)
         Me.btnDisplay.Name = "btnDisplay"
-        Me.btnDisplay.Size = New System.Drawing.Size(120, 31)
+        Me.btnDisplay.Size = New System.Drawing.Size(157, 31)
         Me.btnDisplay.TabIndex = 18
         Me.btnDisplay.Text = "Display Stats"
         Me.btnDisplay.UseVisualStyleBackColor = True
@@ -175,15 +175,18 @@ Partial Class seatingChart
         Me.lstDisplay.FormattingEnabled = True
         Me.lstDisplay.Location = New System.Drawing.Point(12, 98)
         Me.lstDisplay.Name = "lstDisplay"
-        Me.lstDisplay.Size = New System.Drawing.Size(120, 82)
+        Me.lstDisplay.Size = New System.Drawing.Size(157, 82)
         Me.lstDisplay.TabIndex = 17
         '
         'lstRows
         '
+        Me.lstRows.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lstRows.FormattingEnabled = True
+        Me.lstRows.ItemHeight = 15
         Me.lstRows.Location = New System.Drawing.Point(215, 13)
+        Me.lstRows.MultiColumn = True
         Me.lstRows.Name = "lstRows"
-        Me.lstRows.Size = New System.Drawing.Size(100, 329)
+        Me.lstRows.Size = New System.Drawing.Size(94, 319)
         Me.lstRows.TabIndex = 16
         '
         'txtRow
