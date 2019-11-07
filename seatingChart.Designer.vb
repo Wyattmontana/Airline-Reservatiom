@@ -46,60 +46,54 @@ Partial Class seatingChart
         '
         'txtF
         '
-        Me.txtF.Location = New System.Drawing.Point(360, 498)
-        Me.txtF.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtF.Location = New System.Drawing.Point(270, 372)
         Me.txtF.Name = "txtF"
-        Me.txtF.Size = New System.Drawing.Size(25, 22)
+        Me.txtF.Size = New System.Drawing.Size(20, 20)
         Me.txtF.TabIndex = 31
         Me.txtF.Text = "-"
         Me.txtF.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtE
         '
-        Me.txtE.Location = New System.Drawing.Point(307, 498)
-        Me.txtE.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtE.Location = New System.Drawing.Point(230, 372)
         Me.txtE.Name = "txtE"
-        Me.txtE.Size = New System.Drawing.Size(25, 22)
+        Me.txtE.Size = New System.Drawing.Size(20, 20)
         Me.txtE.TabIndex = 30
         Me.txtE.Text = "-"
         Me.txtE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtD
         '
-        Me.txtD.Location = New System.Drawing.Point(259, 498)
-        Me.txtD.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtD.Location = New System.Drawing.Point(194, 372)
         Me.txtD.Name = "txtD"
-        Me.txtD.Size = New System.Drawing.Size(25, 22)
+        Me.txtD.Size = New System.Drawing.Size(20, 20)
         Me.txtD.TabIndex = 29
         Me.txtD.Text = "-"
         Me.txtD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtC
         '
-        Me.txtC.Location = New System.Drawing.Point(201, 498)
-        Me.txtC.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtC.Location = New System.Drawing.Point(151, 372)
         Me.txtC.Name = "txtC"
-        Me.txtC.Size = New System.Drawing.Size(25, 22)
+        Me.txtC.Size = New System.Drawing.Size(20, 20)
         Me.txtC.TabIndex = 28
         Me.txtC.Text = "-"
         Me.txtC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtB
         '
-        Me.txtB.Location = New System.Drawing.Point(149, 498)
-        Me.txtB.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtB.Location = New System.Drawing.Point(112, 372)
         Me.txtB.Name = "txtB"
-        Me.txtB.Size = New System.Drawing.Size(25, 22)
+        Me.txtB.Size = New System.Drawing.Size(20, 20)
         Me.txtB.TabIndex = 27
         Me.txtB.Text = "-"
         Me.txtB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtA
         '
-        Me.txtA.Location = New System.Drawing.Point(96, 498)
-        Me.txtA.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtA.Location = New System.Drawing.Point(72, 372)
         Me.txtA.Name = "txtA"
-        Me.txtA.Size = New System.Drawing.Size(25, 22)
+        Me.txtA.Size = New System.Drawing.Size(20, 20)
         Me.txtA.TabIndex = 26
         Me.txtA.Text = "-"
         Me.txtA.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -107,79 +101,71 @@ Partial Class seatingChart
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(365, 479)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Location = New System.Drawing.Point(274, 356)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(16, 17)
+        Me.Label7.Size = New System.Drawing.Size(13, 13)
         Me.Label7.TabIndex = 25
         Me.Label7.Text = "F"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(312, 479)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Location = New System.Drawing.Point(234, 356)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(17, 17)
+        Me.Label6.Size = New System.Drawing.Size(14, 13)
         Me.Label6.TabIndex = 24
         Me.Label6.Text = "E"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(263, 479)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Location = New System.Drawing.Point(197, 356)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(18, 17)
+        Me.Label5.Size = New System.Drawing.Size(15, 13)
         Me.Label5.TabIndex = 23
         Me.Label5.Text = "D"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(207, 479)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(155, 356)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(17, 17)
+        Me.Label4.Size = New System.Drawing.Size(14, 13)
         Me.Label4.TabIndex = 22
         Me.Label4.Text = "C"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(155, 479)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(116, 356)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(17, 17)
+        Me.Label3.Size = New System.Drawing.Size(14, 13)
         Me.Label3.TabIndex = 21
         Me.Label3.Text = "B"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(100, 479)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(75, 356)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(17, 17)
+        Me.Label2.Size = New System.Drawing.Size(14, 13)
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "A"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(16, 479)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(12, 356)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(35, 17)
+        Me.Label1.Size = New System.Drawing.Size(29, 13)
         Me.Label1.TabIndex = 19
         Me.Label1.Text = "Row"
         '
         'btnDisplay
         '
-        Me.btnDisplay.Location = New System.Drawing.Point(16, 75)
-        Me.btnDisplay.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnDisplay.Location = New System.Drawing.Point(12, 61)
         Me.btnDisplay.Name = "btnDisplay"
-        Me.btnDisplay.Size = New System.Drawing.Size(160, 38)
+        Me.btnDisplay.Size = New System.Drawing.Size(120, 31)
         Me.btnDisplay.TabIndex = 18
         Me.btnDisplay.Text = "Display Stats"
         Me.btnDisplay.UseVisualStyleBackColor = True
@@ -187,29 +173,24 @@ Partial Class seatingChart
         'lstDisplay
         '
         Me.lstDisplay.FormattingEnabled = True
-        Me.lstDisplay.ItemHeight = 16
-        Me.lstDisplay.Location = New System.Drawing.Point(16, 121)
-        Me.lstDisplay.Margin = New System.Windows.Forms.Padding(4)
+        Me.lstDisplay.Location = New System.Drawing.Point(12, 98)
         Me.lstDisplay.Name = "lstDisplay"
-        Me.lstDisplay.Size = New System.Drawing.Size(159, 100)
+        Me.lstDisplay.Size = New System.Drawing.Size(120, 82)
         Me.lstDisplay.TabIndex = 17
         '
         'lstRows
         '
         Me.lstRows.FormattingEnabled = True
-        Me.lstRows.ItemHeight = 16
-        Me.lstRows.Location = New System.Drawing.Point(287, 16)
-        Me.lstRows.Margin = New System.Windows.Forms.Padding(4)
+        Me.lstRows.Location = New System.Drawing.Point(215, 13)
         Me.lstRows.Name = "lstRows"
-        Me.lstRows.Size = New System.Drawing.Size(98, 436)
+        Me.lstRows.Size = New System.Drawing.Size(100, 329)
         Me.lstRows.TabIndex = 16
         '
         'txtRow
         '
-        Me.txtRow.Location = New System.Drawing.Point(19, 500)
-        Me.txtRow.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtRow.Location = New System.Drawing.Point(14, 373)
         Me.txtRow.Name = "txtRow"
-        Me.txtRow.Size = New System.Drawing.Size(25, 22)
+        Me.txtRow.Size = New System.Drawing.Size(20, 20)
         Me.txtRow.TabIndex = 32
         Me.txtRow.Text = "-"
         Me.txtRow.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -217,35 +198,38 @@ Partial Class seatingChart
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(65, 501)
+        Me.Label8.Location = New System.Drawing.Point(49, 374)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(11, 17)
+        Me.Label8.Size = New System.Drawing.Size(9, 13)
         Me.Label8.TabIndex = 33
         Me.Label8.Text = "|"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(65, 484)
+        Me.Label9.Location = New System.Drawing.Point(49, 360)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(11, 17)
+        Me.Label9.Size = New System.Drawing.Size(9, 13)
         Me.Label9.TabIndex = 34
         Me.Label9.Text = "|"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(65, 518)
+        Me.Label10.Location = New System.Drawing.Point(49, 388)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(11, 17)
+        Me.Label10.Size = New System.Drawing.Size(9, 13)
         Me.Label10.TabIndex = 35
         Me.Label10.Text = "|"
         '
         'seatingChart
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(403, 599)
+        Me.ClientSize = New System.Drawing.Size(346, 409)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -266,7 +250,6 @@ Partial Class seatingChart
         Me.Controls.Add(Me.btnDisplay)
         Me.Controls.Add(Me.lstDisplay)
         Me.Controls.Add(Me.lstRows)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "seatingChart"
         Me.Text = "seatingChart"
         Me.ResumeLayout(False)
