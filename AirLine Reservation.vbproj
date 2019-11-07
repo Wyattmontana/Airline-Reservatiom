@@ -47,6 +47,9 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Martz90-Circle-Addon2-Plane-flight.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -126,6 +129,13 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Martz90-Circle-Addon2-Plane-flight.ico" />
+    <None Include="Resources\Alaska image logo.png" />
+    <None Include="Resources\Alaska-Airlines-Takeoff-Mountains.jpg" />
+    <None Include="Resources\Alaska Logo.PNG" />
+    <None Include="Resources\alaskaairlines_logo-800x300.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

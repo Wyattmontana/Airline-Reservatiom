@@ -22,5 +22,20 @@ AirLine Reservation
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:AirLine_Reservation.My.Resources.Resources.Alaska_image_logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AirLine_Reservation.My.Resources.Resources.Alaska_Logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AirLine_Reservation.My.Resources.Resources.Alaska_Plane">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

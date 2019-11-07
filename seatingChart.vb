@@ -2,12 +2,12 @@
     Dim seats(20, 6) As String
     Dim frmAssign As New assignFlyer()
     Private Sub frmSeatingChart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lstRows.Items.Add(" A  B  C   D  E  F ")
+        lstRows.Items.Add(" ABC DEF ")
         For i As Integer = 1 To 20
             For j As Integer = 1 To 6
-                seats(i, j) = " O"
+                seats(i, j) = "O"
             Next
-            lstRows.Items.Add(" O O O    O O O ")
+            lstRows.Items.Add(" OOO OOO ")
         Next
     End Sub
 
