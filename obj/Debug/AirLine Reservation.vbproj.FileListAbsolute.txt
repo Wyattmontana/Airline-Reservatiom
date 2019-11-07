@@ -1,0 +1,11 @@
+C:\Users\Egg\source\repos\AirLine Reservation\obj\Debug\AirLine Reservation.vbprojAssemblyReference.cache
+C:\Users\Egg\source\repos\AirLine Reservation\obj\Debug\AirLine_Reservation.Resources.resources
+C:\Users\Egg\source\repos\AirLine Reservation\obj\Debug\AirLine_Reservation.seatingChart.resources
+C:\Users\Egg\source\repos\AirLine Reservation\obj\Debug\AirLine Reservation.vbproj.GenerateResource.cache
+C:\Users\Egg\source\repos\AirLine Reservation\bin\Debug\AirLine Reservation.exe.config
+C:\Users\Egg\source\repos\AirLine Reservation\bin\Debug\AirLine Reservation.exe
+C:\Users\Egg\source\repos\AirLine Reservation\bin\Debug\AirLine Reservation.pdb
+C:\Users\Egg\source\repos\AirLine Reservation\bin\Debug\AirLine Reservation.xml
+C:\Users\Egg\source\repos\AirLine Reservation\obj\Debug\AirLine Reservation.exe
+C:\Users\Egg\source\repos\AirLine Reservation\obj\Debug\AirLine Reservation.xml
+C:\Users\Egg\source\repos\AirLine Reservation\obj\Debug\AirLine Reservation.pdb
