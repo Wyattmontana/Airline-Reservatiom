@@ -1,14 +1,30 @@
-﻿Public Class seatingChart
+﻿Imports System.Data
+Imports System.Data.Odbc
+
+Public Class seatingChart
+    Dim db As String = "Dsn=orcl12;uid=wmontana;pwd=0336321"
+    Dim con As New OdbcConnection(db)
+
     Dim seats(20, 6) As String
     Dim frmAssign As New assignFlyer()
+
     Private Sub frmSeatingChart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        lstRows.Items.Add(" ABC DEF ")
+        'initialize seat list
+        lstRows.Items.Add(" ABC  DEF ")
         For i As Integer = 1 To 20
             For j As Integer = 1 To 6
                 seats(i, j) = "O"
             Next
             lstRows.Items.Add(" OOO OOO ")
         Next
+
+        'open connection
+        Try
+            con.Open()
+        Catch ex As Exception
+            lstDisplay.Items.Add("Error opening connection")
+        End Try
+
     End Sub
 
     Private Sub updateRow(row As Integer)
@@ -20,12 +36,13 @@
         txtE.Text = seats(row, 5)
         txtF.Text = seats(row, 6)
     End Sub
-    Private Sub Assign(Seat As Integer)
+    Private Sub Assign(seat As Integer)
         Dim row As Integer = lstRows.SelectedIndex
         If row > 0 Then
-            assignFlyer.seat = seats(row, Seat)
+            assignFlyer.seat = seats(row, seat)
             assignFlyer.ShowDialog()
-            seats(row, Seat) = assignFlyer.seat
+            seats(row, seat) = assignFlyer.seat
+
             updateRow(row)
             lstRows.Items(row) = " " & seats(row, 1) & seats(row, 2) & seats(row, 3) &
                                  " " & seats(row, 4) & seats(row, 5) & seats(row, 6)
@@ -86,7 +103,37 @@
         lstDisplay.Items.Add("Seats Filled : " & (20 * 6 - vacant))
         lstDisplay.Items.Add("Windows Available : " & window)
         lstDisplay.Items.Add("Other Available seats :" & vacant - window)
-    End Sub
 
+        'show from student db
+        Dim sn As String
+        Dim sid As Double
+        Dim cls As Double
+        Dim maj As String
+
+        Try
+            Dim sql As String = "SELECT * FROM STUDENT;"
+            Dim cmd As New OdbcCommand(sql, con)
+            Dim studentReader As OdbcDataReader = cmd.ExecuteReader()
+
+            While studentReader.Read()
+                sn = studentReader(0)
+                sid = CInt(studentReader(1))
+                cls = CInt(studentReader(2))
+                maj = studentReader(3)
+
+                lstDisplay.Items.Add(sn & " " & sid & " " & cls & " " & maj)
+
+
+            End While
+
+        Catch ex As Exception
+            lstDisplay.Items.Add("ERROR" & ex.ToString)
+
+        End Try
+
+
+
+
+    End Sub
 End Class
 

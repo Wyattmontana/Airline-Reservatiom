@@ -8,10 +8,12 @@
             Case Else
                 MsgBox("Please fill out the information asked for")
         End Select
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         seat = " - "
+
         Close()
     End Sub
 
