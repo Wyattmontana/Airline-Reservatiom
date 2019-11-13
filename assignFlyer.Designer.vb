@@ -22,9 +22,9 @@ Partial Class assignFlyer
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.fName = New System.Windows.Forms.TextBox()
+        Me.lName = New System.Windows.Forms.TextBox()
+        Me.fFlyer = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -32,29 +32,29 @@ Partial Class assignFlyer
         Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'fName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(9, 24)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(120, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.fName.Location = New System.Drawing.Point(9, 24)
+        Me.fName.Margin = New System.Windows.Forms.Padding(2)
+        Me.fName.Name = "fName"
+        Me.fName.Size = New System.Drawing.Size(120, 20)
+        Me.fName.TabIndex = 0
         '
-        'TextBox2
+        'lName
         '
-        Me.TextBox2.Location = New System.Drawing.Point(9, 62)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(120, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.lName.Location = New System.Drawing.Point(9, 62)
+        Me.lName.Margin = New System.Windows.Forms.Padding(2)
+        Me.lName.Name = "lName"
+        Me.lName.Size = New System.Drawing.Size(120, 20)
+        Me.lName.TabIndex = 1
         '
-        'TextBox3
+        'fFlyer
         '
-        Me.TextBox3.Location = New System.Drawing.Point(10, 99)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(120, 20)
-        Me.TextBox3.TabIndex = 2
+        Me.fFlyer.Location = New System.Drawing.Point(10, 99)
+        Me.fFlyer.Margin = New System.Windows.Forms.Padding(2)
+        Me.fFlyer.Name = "fFlyer"
+        Me.fFlyer.Size = New System.Drawing.Size(120, 20)
+        Me.fFlyer.TabIndex = 2
         '
         'Label1
         '
@@ -116,9 +116,9 @@ Partial Class assignFlyer
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.fFlyer)
+        Me.Controls.Add(Me.lName)
+        Me.Controls.Add(Me.fName)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "assignFlyer"
         Me.Text = "assignFlyer"
@@ -127,9 +127,9 @@ Partial Class assignFlyer
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents fName As TextBox
+    Friend WithEvents lName As TextBox
+    Friend WithEvents fFlyer As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label

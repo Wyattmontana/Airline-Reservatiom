@@ -11,9 +11,10 @@
     <AssemblyName>AirLine Reservation</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -132,6 +133,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Martz90-Circle-Addon2-Plane-flight.ico" />
+    <None Include="Resources\wings.png" />
+    <None Include="Resources\tail %282%29.png" />
+    <None Include="Resources\tail.png" />
+    <None Include="Resources\nose.png" />
+    <None Include="Resources\nose.bmp" />
     <None Include="Resources\Alaska image logo.png" />
     <None Include="Resources\Alaska-Airlines-Takeoff-Mountains.jpg" />
     <None Include="Resources\Alaska Logo.PNG" />
