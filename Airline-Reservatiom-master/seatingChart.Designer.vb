@@ -49,6 +49,7 @@ Partial Class seatingChart
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.chooseFrmBtn = New System.Windows.Forms.Button()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -310,6 +311,15 @@ Partial Class seatingChart
         Me.PictureBox5.TabIndex = 41
         Me.PictureBox5.TabStop = False
         '
+        'chooseFrmBtn
+        '
+        Me.chooseFrmBtn.Location = New System.Drawing.Point(6, 402)
+        Me.chooseFrmBtn.Name = "chooseFrmBtn"
+        Me.chooseFrmBtn.Size = New System.Drawing.Size(291, 31)
+        Me.chooseFrmBtn.TabIndex = 42
+        Me.chooseFrmBtn.Text = "Back to Home?"
+        Me.chooseFrmBtn.UseVisualStyleBackColor = True
+        '
         'seatingChart
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -317,6 +327,7 @@ Partial Class seatingChart
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(95, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(595, 562)
+        Me.Controls.Add(Me.chooseFrmBtn)
         Me.Controls.Add(Me.lstDisplay)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
@@ -382,4 +393,5 @@ Partial Class seatingChart
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents chooseFrmBtn As Button
 End Class

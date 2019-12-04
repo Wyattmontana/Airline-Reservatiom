@@ -14,7 +14,7 @@ Public Class seatingChart
     Public b2 As Double
     Public row As Integer
     Public seatNumber As Integer
-
+    Dim counter As Integer = 0
 
 
 
@@ -22,21 +22,26 @@ Public Class seatingChart
 
 
     Public Sub frmSeatingChart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'initialize seat list
-        lstRows.Items.Add(" ABC  DEF ")
-        For i As Integer = 1 To 20
-            For j As Integer = 1 To 6
-                seats(i, j) = "O"
-            Next
-            lstRows.Items.Add(" OOO OOO ")
-        Next
 
-        'open connection
-        Try
-            con.Open()
-        Catch ex As Exception
-            lstDisplay.Items.Add("Error opening connection")
-        End Try
+
+        If counter < 1 Then
+            counter = counter + 1
+            'initialize seat list
+            lstRows.Items.Add(" ABC  DEF ")
+            For i As Integer = 1 To 20
+                For j As Integer = 1 To 6
+                    seats(i, j) = "O"
+                Next
+                lstRows.Items.Add(" OOO OOO ")
+            Next
+
+            'open connection
+            Try
+                con.Open()
+            Catch ex As Exception
+                lstDisplay.Items.Add("Error opening connection")
+            End Try
+        End If
 
 
 
@@ -287,6 +292,11 @@ Public Class seatingChart
 
     Private Sub seatingChart_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
 
+    End Sub
+
+    Private Sub chooseFrmBtn_Click(sender As Object, e As EventArgs) Handles chooseFrmBtn.Click
+        Me.Hide()
+        chooseForm.Show()
     End Sub
 End Class
 

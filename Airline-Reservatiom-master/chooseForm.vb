@@ -8,10 +8,17 @@ Public Class chooseForm
     Dim frmSeating As New seatingChart()
     Dim db As String = "Dsn=orcl12;uid=wmontana;pwd=0336321"
     Dim con As New OdbcConnection(db)
+    Dim counter As Integer
 
     Private Sub buyBtn_Click(sender As Object, e As EventArgs) Handles buyBtn.Click
         Me.Hide()
-        flightDate = mnthCalendar.SelectionRange.Start.ToString()
+        If counter < 1 Then
+            counter = counter + 1
+            flightDate = mnthCalendar.SelectionRange.Start.ToString()
+        Else
+            MsgBox("LISTEN HONG IF YOU WANT TO CHANGE THE DATE YOU NEED TO RESTART THE PROGRAM")
+        End If
+
         seatingChart.ShowDialog()
 
     End Sub
@@ -29,6 +36,8 @@ Public Class chooseForm
         Dim rownumber As Integer
         Dim seatnumber As Integer
         Dim seatletter As String
+        Dim fprice As Double
+
 
 
         Try
@@ -45,6 +54,7 @@ Public Class chooseForm
                 confirmnumber = CInt(flyerReader(4))
                 rownumber = CInt(flyerReader(5))
                 seatnumber = CInt(flyerReader(6))
+                fprice = CDbl(flyerReader(7))
 
                 Select Case seatnumber
                     Case 1
@@ -69,7 +79,8 @@ Public Class chooseForm
                        "Flight Number - " & flight_number & " " & vbNewLine &
                        "Confirmation - " & confirmnumber & " " & vbNewLine &
                        "Row Number - " & rownumber & " " & vbNewLine &
-                       "Seat - " & seatletter)
+                       "Seat - " & seatletter & " " & vbNewLine &
+                       "Price - $" & Math.Round(fprice, 2))
 
 
             End While
